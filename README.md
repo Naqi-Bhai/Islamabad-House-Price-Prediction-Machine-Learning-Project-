@@ -9,7 +9,7 @@ Data Source: Real estate listing dataset containing house details for various ci
 Tech Stack: Python, Pandas, Scikit-learn, Flask, HTML/CSS
 
 🧠 Machine Learning Workflow
-Data Filtering:
+  Data Filtering:
 
 
 Focused on houses in Islamabad listed for sale.
@@ -19,7 +19,7 @@ Removed outliers and unnecessary columns.
 Normalized prices (in lakhs) for readability.
 
 
-#Feature Engineering:
+  Feature Engineering:
 
 Converted categorical location data using One-Hot Encoding.
 
@@ -28,21 +28,21 @@ Scaled numerical features like area, number of bedrooms, and bathrooms.
 Replaced low-frequency locations with 'other' to reduce dimensionality.
 
 
-#Model Selection:
+  Model Selection:
 
 Trained multiple models: Linear Regression, Lasso, Ridge, and Random Forest.
 
 Selected the best model based on the highest R² score on the test set.
 
 
-Pipeline:
+  Pipeline:
 
 Used ColumnTransformer and Pipeline to ensure reproducible and clean preprocessing + modeling workflow.
 
 Saved the trained model as isb_house_price_pred.pkl using pickle.
 
 
-🌐 Flask Web App
+🌐     Flask Web App
 The Flask application allows users to:
 
 Select location from a dropdown
