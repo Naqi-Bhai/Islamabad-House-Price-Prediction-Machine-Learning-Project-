@@ -1,62 +1,57 @@
-# Islamabad-House-Price-Prediction-Machine-Learning-Project-
-🏡 Islamabad House Price Prediction using Machine Learning
-This project aims to predict the prices of houses in Islamabad, Pakistan, using machine learning models. The project includes complete data preprocessing, model training and evaluation, and a Flask-based web application where users can input house details and get real-time price predictions.
+# 🏡 Islamabad House Price Prediction using Machine Learning
 
-🔍 Project Overview
-Objective: Build a machine learning model to predict house prices in Islamabad based on features like location, number of bedrooms, bathrooms, and total area (in marlas).
-Data Source: Real estate listing dataset containing house details for various cities in Pakistan.
-Tech Stack: Python, Pandas, Scikit-learn, Flask, HTML/CSS
+This project predicts house prices in Islamabad, Pakistan using machine learning models. It includes data preprocessing, model training, evaluation, and a Flask-based web app for real-time predictions.
 
-🧠 Machine Learning Workflow
-  Data Filtering:
+---
+
+## 🔍 Project Overview
+
+- **Objective**: Predict the price of a house based on features like location, bedrooms, bathrooms, and area.
+- **Data Source**: Real estate dataset for Pakistani cities.
+- **Tech Stack**: Python, Pandas, Scikit-learn, Flask, HTML/CSS
+
+---
+
+## 🧠 Machine Learning Workflow
+
+1. **Data Filtering**:
+   - Focused on houses in *Islamabad* listed *For Sale*
+   - Removed outliers and irrelevant columns
+   - Converted price to Lakhs (1 Lakh = 100,000 PKR)
+
+2. **Feature Engineering**:
+   - One-Hot Encoding for locations
+   - Scaling for numerical features (baths, bedrooms, total area)
+   - Replaced infrequent locations with `'other'`
+
+3. **Model Selection**:
+   - Trained and compared:
+     - Linear Regression
+     - Lasso
+     - Ridge
+     - Random Forest
+   - Best model selected using R² Score
+
+4. **Pipeline**:
+   - Combined preprocessing and model into a single pipeline
+   - Saved the best model using `pickle`
+
+---
+
+## 🌐 Flask Web Application
+
+The Flask app allows users to:
+
+- Select a location
+- Enter house area in marlas
+- Choose number of bedrooms and bathrooms
+- View the predicted house price
+
+---
+
+## 📁 Project Structure
 
 
-Focused on houses in Islamabad listed for sale.
-
-Removed outliers and unnecessary columns.
-
-Normalized prices (in lakhs) for readability.
-
-
-
-
-  Feature Engineering:
-
-Converted categorical location data using One-Hot Encoding.
-
-Scaled numerical features like area, number of bedrooms, and bathrooms.
-
-Replaced low-frequency locations with 'other' to reduce dimensionality.
-
-
-
-
-  Model Selection:
-
-Trained multiple models: Linear Regression, Lasso, Ridge, and Random Forest.
-
-Selected the best model based on the highest R² score on the test set.
-
-
-
-  Pipeline:
-
-Used ColumnTransformer and Pipeline to ensure reproducible and clean preprocessing + modeling workflow.
-
-Saved the trained model as isb_house_price_pred.pkl using pickle.
-
-
-
-🌐     Flask Web App
-The Flask application allows users to:
-
-Select location from a dropdown
-
-Enter house details: area (in marlas), number of bedrooms, and bathrooms
-
-View the predicted price on a result page
-
-The app uses the trained model to make real-time predictions.
 
 🚀 How to Run Locally
 Clone the repo:
