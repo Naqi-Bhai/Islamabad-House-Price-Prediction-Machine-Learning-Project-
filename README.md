@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9ff7ee6e-f875-458f-9567-aad988f7d5a0)# Islamabad-House-Price-Prediction-Machine-Learning-Project-
+# Islamabad-House-Price-Prediction-Machine-Learning-Project-
 🏡 Islamabad House Price Prediction using Machine Learning
 This project aims to predict the prices of houses in Islamabad, Pakistan, using machine learning models. The project includes complete data preprocessing, model training and evaluation, and a Flask-based web application where users can input house details and get real-time price predictions.
 
