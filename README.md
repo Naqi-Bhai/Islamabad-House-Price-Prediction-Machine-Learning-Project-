@@ -49,15 +49,10 @@ The Flask app allows users to:
 
 ---
 
-## 📁 Project Structure
+## 📁 🚀 How to Run Locally
 
-
-
-🚀 How to Run Locally
 Clone the repo:
 git clone [https://github.com/yourusername/isb-house-price-prediction.git](https://github.com/Naqi-Bhai/Islamabad-House-Price-Prediction-Machine-Learning-Project-.git)
-
-cd isb-house-price-predictio
 
 Install dependencies:
 pip install flask pandas numpy scikit-learn
