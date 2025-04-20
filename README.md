@@ -1,11 +1,10 @@
 # Islamabad-House-Price-Prediction-Machine-Learning-Project-
 🏡 Islamabad House Price Prediction using Machine Learning
 This project aims to predict the prices of houses in Islamabad, Pakistan, using machine learning models. The project includes complete data preprocessing, model training and evaluation, and a Flask-based web application where users can input house details and get real-time price predictions.
+
 🔍 Project Overview
 Objective: Build a machine learning model to predict house prices in Islamabad based on features like location, number of bedrooms, bathrooms, and total area (in marlas).
-
 Data Source: Real estate listing dataset containing house details for various cities in Pakistan.
-
 Tech Stack: Python, Pandas, Scikit-learn, Flask, HTML/CSS
 
 🧠 Machine Learning Workflow
