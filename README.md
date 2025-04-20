@@ -19,7 +19,7 @@ Removed outliers and unnecessary columns.
 Normalized prices (in lakhs) for readability.
 
 
-Feature Engineering:
+#Feature Engineering:
 
 Converted categorical location data using One-Hot Encoding.
 
@@ -28,7 +28,7 @@ Scaled numerical features like area, number of bedrooms, and bathrooms.
 Replaced low-frequency locations with 'other' to reduce dimensionality.
 
 
-Model Selection:
+#Model Selection:
 
 Trained multiple models: Linear Regression, Lasso, Ridge, and Random Forest.
 
