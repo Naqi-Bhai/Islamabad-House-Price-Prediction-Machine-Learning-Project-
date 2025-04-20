@@ -1,4 +1,4 @@
-# Islamabad-House-Price-Prediction-Machine-Learning-Project-
+![image](https://github.com/user-attachments/assets/9ff7ee6e-f875-458f-9567-aad988f7d5a0)# Islamabad-House-Price-Prediction-Machine-Learning-Project-
 🏡 Islamabad House Price Prediction using Machine Learning
 This project aims to predict the prices of houses in Islamabad, Pakistan, using machine learning models. The project includes complete data preprocessing, model training and evaluation, and a Flask-based web application where users can input house details and get real-time price predictions.
 
@@ -18,6 +18,8 @@ Removed outliers and unnecessary columns.
 Normalized prices (in lakhs) for readability.
 
 
+
+
   Feature Engineering:
 
 Converted categorical location data using One-Hot Encoding.
@@ -27,6 +29,8 @@ Scaled numerical features like area, number of bedrooms, and bathrooms.
 Replaced low-frequency locations with 'other' to reduce dimensionality.
 
 
+
+
   Model Selection:
 
 Trained multiple models: Linear Regression, Lasso, Ridge, and Random Forest.
@@ -34,11 +38,13 @@ Trained multiple models: Linear Regression, Lasso, Ridge, and Random Forest.
 Selected the best model based on the highest R² score on the test set.
 
 
+
   Pipeline:
 
 Used ColumnTransformer and Pipeline to ensure reproducible and clean preprocessing + modeling workflow.
 
 Saved the trained model as isb_house_price_pred.pkl using pickle.
+
 
 
 🌐     Flask Web App
@@ -59,7 +65,7 @@ git clone [https://github.com/yourusername/isb-house-price-prediction.git](https
 cd isb-house-price-predictio
 
 Install dependencies:
-pip install -r requirements.txt
+pip install flask pandas numpy scikit-learn
 
 Run the Flask app:
 python app.py
@@ -67,3 +73,4 @@ python app.py
 Open your browser and go to http://127.0.0.1:5000/
 
 📊 Sample Output
+![image](https://github.com/user-attachments/assets/2b5ed853-0496-4b22-ab78-bc3224a458fa)
