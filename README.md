@@ -11,11 +11,13 @@ Tech Stack: Python, Pandas, Scikit-learn, Flask, HTML/CSS
 🧠 Machine Learning Workflow
 Data Filtering:
 
+
 Focused on houses in Islamabad listed for sale.
 
 Removed outliers and unnecessary columns.
 
 Normalized prices (in lakhs) for readability.
+
 
 Feature Engineering:
 
@@ -25,17 +27,20 @@ Scaled numerical features like area, number of bedrooms, and bathrooms.
 
 Replaced low-frequency locations with 'other' to reduce dimensionality.
 
+
 Model Selection:
 
 Trained multiple models: Linear Regression, Lasso, Ridge, and Random Forest.
 
 Selected the best model based on the highest R² score on the test set.
 
+
 Pipeline:
 
 Used ColumnTransformer and Pipeline to ensure reproducible and clean preprocessing + modeling workflow.
 
 Saved the trained model as isb_house_price_pred.pkl using pickle.
+
 
 🌐 Flask Web App
 The Flask application allows users to:
@@ -48,43 +53,17 @@ View the predicted price on a result page
 
 The app uses the trained model to make real-time predictions.
 
-📁 Project Structure
-php
-Copy
-Edit
-.
-├── app.py                  # Flask web application
-├── templates/
-│   ├── index.html          # Input form for house features
-│   └── display.html        # Result page showing predicted price
-├── static/
-│   └── house.jpg           # Image used in the web app
-├── pakistan_house_price_data.csv  # Raw dataset
-├── isb_house_price_pred.pkl       # Trained and saved model
-└── README.md              # Project documentation
 🚀 How to Run Locally
 Clone the repo:
-
-bash
-Copy
-Edit
 git clone https://github.com/yourusername/isb-house-price-prediction.git
-cd isb-house-price-prediction
+cd isb-house-price-predictio
+
 Install dependencies:
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
-Run the Flask app:
 
-bash
-Copy
-Edit
+Run the Flask app:
 python app.py
+
 Open your browser and go to http://127.0.0.1:5000/
 
 📊 Sample Output
-
-User inputs house details and instantly gets a predicted price based on the trained model.
-
